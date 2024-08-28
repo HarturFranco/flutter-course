@@ -18,6 +18,13 @@ class Home extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           child: const StatusPlanta(),
         ),
+        Expanded(
+          child: Image.asset(
+            'assets/img/tomatinho.jpg',
+            fit: BoxFit.fitHeight,
+            alignment: Alignment.topCenter,
+          ),
+        ),
       ],
     );
   }
