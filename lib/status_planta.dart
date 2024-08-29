@@ -41,8 +41,8 @@ class _StatusPlantaState extends State<StatusPlanta> {
               style: const TextStyle(fontSize: 20),
             ),
             const Expanded(
-              child: SizedBox(),
               flex: 5,
+              child: SizedBox(),
             ),
             ...List.generate(5, (index) {
               if (index < agua) {
@@ -60,8 +60,8 @@ class _StatusPlantaState extends State<StatusPlanta> {
               }
             }),
             const Expanded(
-              child: SizedBox(),
               flex: 1,
+              child: SizedBox(),
             ),
             ElevatedButton(onPressed: aumentaAgua, child: const Text("+"))
           ],
@@ -72,8 +72,8 @@ class _StatusPlantaState extends State<StatusPlanta> {
             style: const TextStyle(fontSize: 20),
           ),
           const Expanded(
-            child: SizedBox(),
             flex: 5,
+            child: SizedBox(),
           ),
           ...List.generate(5, (index) {
             if (index < luz) {
@@ -91,8 +91,8 @@ class _StatusPlantaState extends State<StatusPlanta> {
             }
           }),
           const Expanded(
-            child: SizedBox(),
             flex: 1,
+            child: SizedBox(),
           ),
           FilledButton(onPressed: aumentaLuz, child: const Text("+"))
         ]),
@@ -102,8 +102,8 @@ class _StatusPlantaState extends State<StatusPlanta> {
             style: const TextStyle(fontSize: 20),
           ),
           const Expanded(
-            child: SizedBox(),
             flex: 5,
+            child: SizedBox(),
           ),
           ...List.generate(5, (index) {
             if (index < comida) {
@@ -121,8 +121,8 @@ class _StatusPlantaState extends State<StatusPlanta> {
             }
           }),
           const Expanded(
-            child: SizedBox(),
             flex: 1,
+            child: SizedBox(),
           ),
           TextButton(onPressed: aumentaComida, child: const Text("+")) //
         ]),
