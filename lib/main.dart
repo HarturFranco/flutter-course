@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_course/home.dart';
+import 'package:flutter_course/screens/home/home.dart';
+// import 'package:flutter_course/screens/profile/planta.dart';
+import 'package:flutter_course/theme.dart';
 
 void main() {
   runApp(
     // Nó raiz aqui
     MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Minhas Plantinhhas"),
-          backgroundColor: Colors.green[900],
-          centerTitle: true,
-        ),
-        body: const Home(),
-      ),
+      theme: primaryTheme,
+      // home: const Planta(),
+      home: const Home(),
     ),
   );
 }

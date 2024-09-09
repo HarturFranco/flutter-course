@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_course/shared/styled_button.dart';
 
 class StatusPlanta extends StatefulWidget {
   const StatusPlanta({super.key});
@@ -27,6 +28,24 @@ class _StatusPlantaState extends State<StatusPlanta> {
   void aumentaComida() {
     setState(() {
       comida = comida < 5 ? comida + 1 : 1;
+    });
+  }
+
+  void diminuiAgua() {
+    setState(() {
+      agua = agua > 1 ? agua - 1 : 5;
+    });
+  }
+
+  void diminuiLuz() {
+    setState(() {
+      luz = luz > 1 ? luz - 1 : 5;
+    });
+  }
+
+  void diminuiComida() {
+    setState(() {
+      comida = comida > 1 ? comida - 1 : 5;
     });
   }
 
@@ -63,7 +82,12 @@ class _StatusPlantaState extends State<StatusPlanta> {
               flex: 1,
               child: SizedBox(),
             ),
-            ElevatedButton(onPressed: aumentaAgua, child: const Text("+"))
+            NegativeStyledButton(
+                onPressed: diminuiAgua, child: const Text("-")),
+            SizedBox(
+              width: 10,
+            ),
+            StyledButton(onPressed: aumentaAgua, child: const Text("+"))
           ],
         ),
         Row(children: <Widget>[
@@ -94,7 +118,11 @@ class _StatusPlantaState extends State<StatusPlanta> {
             flex: 1,
             child: SizedBox(),
           ),
-          FilledButton(onPressed: aumentaLuz, child: const Text("+"))
+          NegativeStyledButton(onPressed: diminuiLuz, child: const Text("-")),
+          SizedBox(
+            width: 10,
+          ),
+          StyledButton(onPressed: aumentaLuz, child: const Text("+"))
         ]),
         Row(children: <Widget>[
           Text(
@@ -124,7 +152,12 @@ class _StatusPlantaState extends State<StatusPlanta> {
             flex: 1,
             child: SizedBox(),
           ),
-          TextButton(onPressed: aumentaComida, child: const Text("+")) //
+          NegativeStyledButton(
+              onPressed: diminuiComida, child: const Text("-")),
+          SizedBox(
+            width: 10,
+          ),
+          StyledButton(onPressed: aumentaComida, child: const Text("+")) //
         ]),
       ],
     );
