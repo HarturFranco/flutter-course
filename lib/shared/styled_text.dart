@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StyledText extends StatelessWidget {
   final String text;
@@ -10,7 +11,9 @@ class StyledText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: Theme.of(context).textTheme.bodyMedium);
+    return Text(text,
+        style: GoogleFonts.montserrat(
+            textStyle: Theme.of(context).textTheme.bodyMedium));
   }
 }
 
@@ -24,7 +27,9 @@ class HeaderStyledText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: Theme.of(context).textTheme.headlineMedium);
+    return Text(text,
+        style: GoogleFonts.montserrat(
+            textStyle: Theme.of(context).textTheme.headlineMedium));
   }
 }
 
@@ -39,6 +44,7 @@ class TitleStyledText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(text.toUpperCase(),
-        style: Theme.of(context).textTheme.titleMedium);
+        style: GoogleFonts.montserrat(
+            textStyle: Theme.of(context).textTheme.titleMedium));
   }
 }
