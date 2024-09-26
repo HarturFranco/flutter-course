@@ -65,7 +65,13 @@ flutter:
      - assets/img/fertilizer.png
      - assets/img/sun.png
      - assets/img/water-drop.png
-     - assets/img/tomatinho.jpg
+     - assets/img/profile_fotos/tomatinho.jpg
+     - assets/img/profile_fotos/figo.jpg
+     - assets/img/profile_fotos/grape_vine.jpg
+     - assets/img/profile_fotos/lemmon_tree.jpg
+     - assets/img/profile_fotos/mirtilo.jpg
+     - assets/img/profile_fotos/raspberry.jpg
+     - assets/img/profile_fotos/Strawberry.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

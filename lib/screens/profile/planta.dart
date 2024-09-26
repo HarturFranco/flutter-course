@@ -24,7 +24,7 @@ class Planta extends StatelessWidget {
           ),
           Expanded(
             child: Image.asset(
-              'assets/img/tomatinho.jpg',
+              'assets/img/profile_fotos/tomatinho.jpg',
               fit: BoxFit.fitHeight,
               alignment: Alignment.topCenter,
             ),

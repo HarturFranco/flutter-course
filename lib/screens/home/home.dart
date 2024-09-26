@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_course/shared/styled_button.dart';
 import 'package:flutter_course/shared/styled_text.dart';
+// TODO - Importar modelo Planta.dart
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -18,6 +19,8 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         children: <Widget>[
+          // TODO - Implementar ListView
+
           TitleStyledText(text: "plantinha1"),
           HeaderStyledText(text: "plantinha1"),
           StyledText(text: "plantinha1"),
