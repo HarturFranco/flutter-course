@@ -17,10 +17,9 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: const TitleStyledText(text: "Minhas Plantinhas"),
       ),
-      body: Column(
+      body: // TODO - Implementar ListView (substituir coluna...)
+          Column(
         children: <Widget>[
-          // TODO - Implementar ListView
-
           TitleStyledText(text: "plantinha1"),
           HeaderStyledText(text: "plantinha1"),
           StyledText(text: "plantinha1"),
